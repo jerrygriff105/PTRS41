@@ -18,7 +18,7 @@ class CfgWeapons
 
     class PTRS41_Rifle: Rifle_Long_Base_F
     {
-        author = "nirotheowl";
+        author = "nirot&jerry";
         _generalMacro = "PTRS41_Rifle";
         scope = 2;
         displayName = "PTRS-41 Anti-Tank Rifle";
@@ -58,7 +58,7 @@ class CfgMagazines
     class CA_Magazine;
     class PTRS41_5Rnd_145x114_Mag: CA_Magazine
     {
-        author = "nirotheowl";
+        author = "niro&jerry";
         displayName = "PTRS-41 5Rnd Mag";
         ammo = "PTRS41_145x114_Ball";
         count = 5;
@@ -69,25 +69,6 @@ class CfgMagazines
     };
 };
 
-class CfgAmmo
-{
-    class BulletBase;
-    class PTRS41_145x114_Ball: BulletBase
-    {
-        cartridge = "FxCartridge_145";
-        caliber = 7.12; // Higher than normal for anti-tank rifles
-        displayName = "14.5x114mm Ball";
-        hit = 36; // Damage value
-        indirectHit = 0;
-        indirectHitRange = 0;
-        typicalSpeed = 1000;
-        airFriction = -0.0005;
-        model = "\A3\Weapons_Data_F\ammo\shell";
-        tracerScale = 1.1;
-        tracerStartTime = 0.03;
-        tracerEndTime = 1.2;
-        nvgOnly = 0;
-        explosive = 0;
-    };
-};
+
+#include "PTRS41_Ammo.hpp"
 
