@@ -15,7 +15,7 @@ class CfgPatches
 class CfgWeapons
 {
     class Rifle_Long_Base_F; // Inherit from Arma 3 base class
-
+    
     class PTRS41_Rifle: Rifle_Long_Base_F
     {
         author = "nirot&jerry";
